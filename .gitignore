@@ -1,0 +1,63 @@
+# ===== LOGS =====
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ===== FRONTEND (React Client) =====
+client/node_modules/
+client/dist/
+client/dist-ssr/
+client/.vscode/*
+!client/.vscode/extensions.json
+client/.env
+client/.env.*
+!client/.env.example
+client/.local
+client/coverage/
+
+# ===== BACKEND (server) =====
+server/.vs/
+server/**/bin/
+server/**/obj/
+server/**/*.user
+server/**/.vscode/*
+!server/**/.vscode/extensions.json
+server/**/.idea/
+server/**/[Dd]ebug/
+server/**/[Rr]elease/
+
+# Secrets and configurations
+server/**/appsettings.*.json        # Ignore all environment-specific settings
+!server/**/appsettings.json         # But track the default settings
+!server/**/appsettings.example.json # And track the example template
+server/**/secrets.json
+server/**/*.pfx
+server/**/*.key
+server/**/*.pem
+server/**/user-secrets.json
+
+# ===== TESTS =====
+**/TestResults/
+**/coverage/
+*.coverage
+*.coveragexml
+
+# ===== IDE/Editor =====
+.vs/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
+
+# ===== ENVIRONMENT =====
+.env
+.env.*
+!.env.example
