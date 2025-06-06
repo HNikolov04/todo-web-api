@@ -31,9 +31,10 @@ server/**/[Dd]ebug/
 server/**/[Rr]elease/
 
 # Secrets and configurations
-server/**/appsettings.*.json        # Ignore all environment-specific settings
-!server/**/appsettings.json         # But track the default settings
-!server/**/appsettings.example.json # And track the example template
+server/src/Todo.WebApi/appsettings.Development.json
+server/src/Todo.WebApi/appsettings.Production.json
+!server/src/Todo.WebApi/appsettings.json
+!server/src/Todo.WebApi/appsettings.example.json
 server/**/secrets.json
 server/**/*.pfx
 server/**/*.key
