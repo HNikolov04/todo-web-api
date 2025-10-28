@@ -33,7 +33,7 @@ server/**/[Rr]elease/
 # Secrets and configurations
 server/src/Todo.WebApi/appsettings.Development.json
 server/src/Todo.WebApi/appsettings.Production.json
-!server/src/Todo.WebApi/appsettings.json
+server/src/Todo.WebApi/appsettings.json
 !server/src/Todo.WebApi/appsettings.example.json
 server/**/secrets.json
 server/**/*.pfx
@@ -53,7 +53,6 @@ server/**/user-secrets.json
 *.suo
 *.ntvs*
 *.njsproj
-*.sln
 *.sw?
 .DS_Store
 Thumbs.db
